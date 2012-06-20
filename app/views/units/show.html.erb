@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Unit nbr:</b>
+  <%= @unit.unit_nbr %>
+</p>
+
+<p>
+  <b>Shop nbr:</b>
+  <%= @unit.shop_nbr %>
+</p>
+
+<p>
+  <b>Home station:</b>
+  <%= @unit.home_station %>
+</p>
+
+<p>
+  <b>License:</b>
+  <%= @unit.license %>
+</p>
+
+<p>
+  <b>Radioid:</b>
+  <%= @unit.radioid %>
+</p>
+
+
+<%= link_to 'Edit', edit_unit_path(@unit) %> |
+<%= link_to 'Back', units_path %>

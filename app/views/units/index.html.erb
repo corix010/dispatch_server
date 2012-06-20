@@ -1,0 +1,31 @@
+<h1>Listing units</h1>
+
+<table>
+  <tr>
+    <th>Unit nbr</th>
+    <th>Shop nbr</th>
+    <th>Home station</th>
+    <th>License</th>
+    <th>Radioid</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @units.each do |unit| %>
+  <tr>
+    <td><%= unit.unit_nbr %></td>
+    <td><%= unit.shop_nbr %></td>
+    <td><%= unit.home_station %></td>
+    <td><%= unit.license %></td>
+    <td><%= unit.radioid %></td>
+    <td><%= link_to 'Show', unit %></td>
+    <td><%= link_to 'Edit', edit_unit_path(unit) %></td>
+    <td><%= link_to 'Destroy', unit, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Unit', new_unit_path %>

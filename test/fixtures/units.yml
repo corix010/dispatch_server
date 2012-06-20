@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  unit_nbr: MyString
+  shop_nbr: MyString
+  home_station: 1
+  license: MyString
+  radioid: MyString
+
+two:
+  unit_nbr: MyString
+  shop_nbr: MyString
+  home_station: 1
+  license: MyString
+  radioid: MyString
