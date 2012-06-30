@@ -8,11 +8,7 @@ class UnitsController < ApplicationController
     else
       @units = Unit.all
     end
-
-    respond_to do |format|
-      format.html # index.html.erb
-      format.json { render json: @units }
-    end
+      render json: @units
   end
 
   # GET /units/1
